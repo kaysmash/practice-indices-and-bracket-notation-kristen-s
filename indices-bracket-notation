@@ -1,0 +1,39 @@
+const books = [
+    ["1Q84", "The Wind-Up Bird Chronicle", "Kafka on the Shore"],
+    ["Choke", "Fight Club", "Lullaby"],
+    ["Cell", "Dreamcatcher", "Salems Lot"]
+]
+console.log(books[0][0]) // "1Q84"
+console.log(books[0][1]) // "The Wind-Up Bird Chronicle"
+console.log(books[0][2]) // "Kafka on the Shore"
+console.log(books[1][0]) // "Choke"
+console.log(books[1][1]) // "Fight Club"
+console.log(books[1][2]) // "Lullaby"
+console.log(books[2][0]) // "Cell"
+console.log(books[2][1]) // "Dreamcatcher"
+console.log(books[2][2]) // "Salems Lot"
+
+let row1 = 0;
+let row2 = 1;
+let row3 = 2;
+
+let item1 = 0;
+let item2 = 1;
+let item3 = 2;
+
+console.log(books[row1][item1]) // "1Q84"
+console.log(books[row1][item2]) // "The Wind-Up Bird Chronicle"
+console.log(books[row1][item3]) // "Kafka on the Shore"
+console.log(books[row2][item1]) // "Choke"
+console.log(books[row2][item2]) // "Fight Club"
+console.log(books[row2][item3]) // "Lullaby"
+console.log(books[row3][item1]) // "Cell"
+console.log(books[row3][item2]) // "Dreamcatcher"
+console.log(books[row3][item3]) // "Salems Lot"
+
+
+for (let i = row2; i <= row2; i++) {
+  for (let j = 0; j < books[i].length; j++) {
+    console.log(books[i][j]);
+  }
+}
